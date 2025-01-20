@@ -50,6 +50,7 @@ const Body = () => {
                 Products ({sortedProducts.length})
             </h1>
             <div className="mb-6 flex gap-4 items-center">
+                <span>Filter by Category:</span>
                 <select
                     value={selectedCategory}
                     onChange={(e) => setSelectedCategory(e.target.value)}
@@ -62,6 +63,7 @@ const Body = () => {
                     <option value="women's clothing">Women's Clothing</option>
                 </select>
 
+                <span>Sort by Price:</span>
                 <select
                     value={sortOrder}
                     onChange={(e) => setSortOrder(e.target.value)}
